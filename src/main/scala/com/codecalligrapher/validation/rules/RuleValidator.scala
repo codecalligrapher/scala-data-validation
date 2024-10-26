@@ -1,8 +1,8 @@
-package com.example.validation.rules
+package com.codecalligrapher.validation.rules
 
 import org.apache.spark.sql.{DataFrame, Row}
 import org.apache.spark.sql.functions._
-import com.example.validation.model.ValidationRule
+import com.codecalligrapher.validation.model.ValidationRule
 
 trait RuleValidator {
   def validate(df: DataFrame, rule: ValidationRule): DataFrame
